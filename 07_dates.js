@@ -8,7 +8,7 @@ console.log(typeof mydate)
 
 let newdate=new Date(2026,0,8);
 console.log(newdate.toDateString())
-let newdate2=new Date(2026-01-08);
+let newdate2=new Date(2026-1-8);
 console.log(newdate2.toDateString())
 
 let mytimestamp = Date.now();
