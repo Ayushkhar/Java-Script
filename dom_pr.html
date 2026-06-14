@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>laptop name</title>
+</head>
+<body style="background-color:black; color:wheat;">
+    <ul class="laptop">
+        <li>
+            This is laptop name
+        </li>
+    </ul>
+</body>
+    <script>
+        function laptop(lapname){
+            const lapel=document.createElement('li');
+            const addtext =document.createTextNode(lapname);
+            lapel.appendChild(addtext);
+            document.querySelector('.laptop').appendChild(lapel);
+        }
+        laptop('macbook');
+
+
+    </script>
+</html>

@@ -3,9 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Bum boom</title>
 </head>
-<body>
-    
+
+<body style="background-color:black; color:white;">
+
+    <ul class="cars">
+        <li>Mercedes benz 1000</li>
+    </ul>
+
 </body>
+<script>
+    function addcars(carsname)
+    {
+        const li = document.createElement('li');
+        li.innerHTML=`${carsName}`
+        document.querySelector('.cars')
+        appendChild(li)
+    }
+    addcars("mercedes");
+    addcars("volvo");
+
+    function addopticars(carsName)
+    {
+        const li = document.createElement('li');
+        const addtext =document.createTextNode(carsName);
+        li.appendChild(addtext);
+        document.querySelector('.cars').appendChild(li);
+    }
+    adopticars('hyundai');
+     
+</script>
 </html>
