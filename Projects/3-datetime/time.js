@@ -1,6 +1,11 @@
-// const clock = document.getElementById('clock');
+const clock = document.getElementById('clock')
+console.log(clock)
+const body = document.querySelector('body')
 
-setInterval(function(){
+setInterval(()=>{
     const date = new Date();
-    clock.innerHTML=date.toLocaleTimeString();
+    const time = date.toLocaleTimeString()
+
+    clock.innerHTML = time 
+    console.log(time)
 },1000)
