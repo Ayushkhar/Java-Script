@@ -89,5 +89,14 @@
     //   },
     //   false,
     // ); // This is the concept of bubbling
+
+    const ul = document.querySelector("#images");
+    // console.log(ul)
+    ul.addEventListener("click", function (e) {
+      if (e.target.tagName === "IMG") 
+      {
+        e.target.parentNode.remove();
+      }
+    },false);
   </script>
 </html>
